@@ -9,7 +9,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut previous_measurement: Option<usize> = None;
     let mut num_increments: usize = 0;
     for line in stdin.lines() {
-        let current_measurement = line?.parse::<usize>()?;
+        let line = line?;
+        let current_measurement = line.parse::<usize>()?;
         if let Some(previous_measurement) = previous_measurement {
             if current_measurement > previous_measurement {
                 num_increments += 1;
