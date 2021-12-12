@@ -10,6 +10,10 @@
 		{
 			"path": "day1/part2",
 			"name": "day1_part2"
+		},
+		{
+			"path": "day2/part1",
+			"name": "day2_part1"
 		}
 	],
 	"settings": {}
